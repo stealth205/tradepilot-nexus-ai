@@ -18,11 +18,17 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Trading-specific variants
+        command: "gradient-primary text-white font-semibold hover:opacity-90 glow-primary hover-lift",
+        success: "bg-success text-success-foreground hover:bg-success/90 glow-success",
+        terminal: "bg-card border border-primary/20 text-foreground hover:border-primary/40 hover:bg-card/80",
+        holographic: "bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30 text-foreground hover:from-primary/30 hover:to-accent/30 backdrop-blur-sm",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
+        xl: "h-14 rounded-lg px-10 text-base font-semibold",
         icon: "h-10 w-10",
       },
     },
